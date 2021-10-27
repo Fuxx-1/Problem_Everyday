@@ -2,7 +2,7 @@ package com.problemEveryday.y21.m10.d27;
 
 import java.util.*;
 
-public class Solution {
+public class Solution2 {
     public static void main(String[] args) {
         int[] nums1 = {1,2,2,1};
         int[] nums2 = {2,2};
@@ -20,12 +20,6 @@ public class Solution {
                 temp.add(i);
             }
         }
-        int[] res = new int[temp.size()];
-        int index = 0;
-        for (Integer i : temp) {
-            res[index++] = i;
-        }
-        return res;
-        //set1.stream().mapToInt(x -> x).toArray();
+        return temp.stream().mapToInt(x -> x).toArray();
     }
 }
